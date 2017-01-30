@@ -1,0 +1,20 @@
+SET ANSI_NULLS ON
+SET QUOTED_IDENTIFIER ON
+SET ANSI_PADDING ON
+GO
+CREATE TABLE [dbo].[Files] (
+		[ID]            [int] IDENTITY(1, 1) NOT NULL,
+		[FILE_PATH]     [varchar](800) COLLATE French_CI_AS NULL,
+		[FILE_NAME]     [varchar](800) COLLATE French_CI_AS NULL
+) ON [PRIMARY]
+GO
+CREATE NONCLUSTERED INDEX [idx_file_path]
+	ON [dbo].[Files] ([FILE_PATH])
+	ON [PRIMARY]
+GO
+CREATE CLUSTERED INDEX [idx_id]
+	ON [dbo].[Files] ([ID])
+	ON [PRIMARY]
+GO
+ALTER TABLE [dbo].[Files] SET (LOCK_ESCALATION = TABLE)
+GO

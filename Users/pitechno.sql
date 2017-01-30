@@ -1,0 +1,4 @@
+CREATE USER [pitechno]
+	WITHOUT LOGIN
+	WITH DEFAULT_SCHEMA = [dbo]
+GO

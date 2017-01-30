@@ -1,0 +1,7 @@
+<DatabaseSettings>
+  <Collation>French_CI_AS</Collation>
+  <ServerVersion>Sql2008</ServerVersion>
+  <ServerName>ARDSQL02\ARDSQL02FR</ServerName>
+  <DatabaseName>Ithaque</DatabaseName>
+  <DatabaseInformation Version="1" />
+</DatabaseSettings>

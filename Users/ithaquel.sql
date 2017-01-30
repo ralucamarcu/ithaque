@@ -1,0 +1,4 @@
+CREATE USER [ithaquel]
+	WITHOUT LOGIN
+	WITH DEFAULT_SCHEMA = [dbo]
+GO
